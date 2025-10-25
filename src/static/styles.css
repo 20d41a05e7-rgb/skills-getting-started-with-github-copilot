@@ -112,12 +112,31 @@ section h3 {
 }
 
 .participants-list {
-  list-style: disc;
-  padding-left: 22px;
+  list-style: none;
+  padding-left: 0;
   margin-top: 6px;
   background: linear-gradient(180deg, rgba(245,245,255,0.6), rgba(255,255,255,0.4));
   border-radius: 4px;
   padding: 8px 12px;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.delete-icon {
+  cursor: pointer;
+  color: #dc3545;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  font-size: 16px;
+}
+
+.delete-icon:hover {
+  opacity: 1;
 }
 
 .participants-list li {
