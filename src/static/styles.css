@@ -74,6 +74,90 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.activity-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.activity-card li {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.activity-card .participants-section {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed #e0e0e0;
+}
+
+.participants-title {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.badge {
+  background: linear-gradient(180deg, #eef2ff, #d7defb);
+  color: #1a237e;
+  border: 1px solid #c8d0f8;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 6px;
+  background: linear-gradient(180deg, rgba(245,245,255,0.6), rgba(255,255,255,0.4));
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.delete-icon {
+  cursor: pointer;
+  color: #dc3545;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  font-size: 16px;
+}
+
+.delete-icon:hover {
+  opacity: 1;
+}
+
+.participants-list li {
+  margin-bottom: 6px;
+  color: #444;
+  font-size: 14px;
+}
+
+.participants-list li.no-participants {
+  font-style: italic;
+  color: #888;
+  margin: 0;
+}
+
+/* Slightly reduce spacing on very small cards */
+@media (max-width: 420px) {
+  .participants-list {
+    padding: 6px 10px;
+  }
+}
+
 .form-group {
   margin-bottom: 15px;
 }
